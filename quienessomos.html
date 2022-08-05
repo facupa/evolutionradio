@@ -1,7 +1,6 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
 <meta charset="UTF-8">
 <meta name="description" content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
 <meta name="author" content="Facundo Peña">
@@ -14,12 +13,6 @@ ul
 {
 text-align: center;
 }
-footer
-{
-font-size: 28pt;
-font-family: cursive;
-text-align: center;
-}
 body
 {
 background-color: black;
@@ -28,7 +21,7 @@ color: white;
 p
 {
 font-family: cursive;
-font-size: 28pt;
+font-size:28pt;
 text-align: center;
 color: white;
 }
@@ -61,7 +54,7 @@ font-family: cursive;
 }
 </style>
 <title>
-Evolution radio
+Quienes somos
 </title>
 </head>
 <body>
@@ -77,41 +70,23 @@ var day = date.getDate();
 var month = date.getMonth() + 1;
 var yy = date.getYear();
 var year = (yy < 1000) ? yy + 1900 : yy;
-document.write ('<div class="mifecha">' + "Hoy es " + day + " de " + months[month] + " del " + year);
+document.write('<div class="mifecha">' + "Hoy es " + day + " de " + months[month] + " del " + year);
 //]]>
 </script>    
 <br>
 <br>
 <h1> Bienvenidos a Evolution Radio </h1>
 <img src="logoevolution2.jpg" alt="Logo de Evolution Radio" width="300" height="250" class="imagen">
-<br>
 <p> Somos la evolución </p>
 <p> Escucha música las 24 horas los 7 días de la semana. </p>
 <p> Además te ofrecemos una variedad de programación que te encantará </p>
 <p> Para sintonizar nuestra radio presiona el siguiente botón. </p>
 <br>
 <audio src="http://node-15.zeno.fm/umt30332czzuv?rj-ttl=5&rj-tok=AAABfo4etlEAZasKC7DMlEsgjQ"></audio>
-<ul style="list-style:none;">
-
-<li><button id="boton">Play</button></li>
-
-<li><button onClick='volumeDown();'>Bajar volúmen</button></li>
-
-<li><button onClick='volumeUp();'>Subir volúmen</button></li>
-
-</ul>
+<button id="boton">Play</button>
 <br>
 <br>
 <hr>
-<br>
-
-<h2> Envíanos un whatsapp </h2>
-<br>
-<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
-Haciendo clic en el siguiente enlace nos envías un Whatsapp.
-</p>
-<a href="https://cutt.ly/rLtNG7J" title="Enviar mensaje" rel="nofollow"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-<br>
 <br>
 <h2> Secciones </h2>
 <nav>
@@ -119,80 +94,37 @@ Haciendo clic en el siguiente enlace nos envías un Whatsapp.
 <li> <a href="index.html" accesskey="i"> Inicio </a> </li>
 <li> <a href="quienessomos.html" accesskey="q"> Quienes somos </a> </li>
 <li> <a href="programacion.html" accesskey="p"> Programación </a> </li>
-<li> <a href="https://evolutionradio.com.ar/htdocs/blog/" accesskey="n"> Noticias </a> </li>
 </ul>
 </nav>
 <br>
-<h2> Seguinos en las redes </h2>
+
+<h2> Quienes somos </h2>
 <br>
-<ul>
-<li> <a href="mailto:info@evolutionradio.com.ar" title="contáctanos por correo" rel="nofollow"><i class="fas fa-envelope-square" aria-hidden="true"></i></a></li>
-<li><a href="https://www.facebook.com/Evolution-Radio-106575944443109/" title="facebook" target="_blank" rel="nofollow"> <i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-<li><a href="https://twitter.com/EvolutionRadio5?s=08" target="_blank" title="twitter" rel="nofollow"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
-<li><a href="https://www.instagram.com/p/CSanf_XscjJ/?utm_medium=copy_link" target="_blank" title="instagram" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-</ul>
+<img src="bandejasonido.jpeg" class="imagen" width="350"  height="300" alt="bandeja de sonido con un audífono">
 <br>
-<footer>
-Sitio web creado por Facundo Peña. Copyright © 2021.
-</footer>
+<br>
+<p> Evolution Radio, comenzó como un proyecto de amigos que comparten la pasión por este maravilloso medio de comunicación.
+Allá por mayo de 2020, e inmersos en el contexto de la pandemia mundial a causa del Covid-19, decidimos que era el momento apropiado para intentar hacer aquello que teníamos ganas desde hacía ya unos cuantos años.
+En un principio, la idea fue dar a conocer géneros tales como el Rock Sinfónico y el Metal Progresivo.
+Con el paso del tiempo, fuimos incorporando diversos programas que abordan distintas problemáticas como así también, la inclusión de todo tipo de géneros musicales.
+Esperamos que la programación sea del agrado de todos,  y los esperamos a que se sumen a formar parte de esta gran familia. </p>
+<br>
+<form>
+<input type="button" value="Ir a la  página principal" onClick="window.location.href='index.html'">
+</form>
 </body>
 <script>
 var audio_obj = document.querySelector("audio");
-
 var sound = document.getElementById("boton");
 
-var audio_volume = audio_obj.volume;
-
-
-
 sound.addEventListener("click", function() {
-
 	if (audio_obj.paused) {
-
 		audio_obj.play();
-
 		sound.innerHTML = "Pause";
-
 	} else {
-
 		audio_obj.pause();
-
 		sound.innerHTML = "Play";
-
 	}
-
 });
-
-
-
-function volumeUp() {
-
-	if (audio_volume < 1.0) {
-
-		audio_volume += 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
-function volumeDown() {
-
-	if (audio_volume > 0.2) {
-
-		audio_volume -= 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
 </script>
-
 </html>

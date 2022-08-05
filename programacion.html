@@ -1,11 +1,25 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
 <meta charset="UTF-8">
 <meta name="description" content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
 <meta name="author" content="Facundo Peña">
 <style>
+caption
+{
+padding: 10px;
+margin: 0px;
+font-weight: bold;
+}
+table, th, td
+{
+border: 1px solid white;
+text-align: center;
+}
+<tabla
+{
+border-collapse: collapse;
+}
 .imagen
 {
 text-align: center;
@@ -91,108 +105,112 @@ document.write ('<div class="mifecha">' + "Hoy es " + day + " de " + months[mont
 <p> Para sintonizar nuestra radio presiona el siguiente botón. </p>
 <br>
 <audio src="http://node-15.zeno.fm/umt30332czzuv?rj-ttl=5&rj-tok=AAABfo4etlEAZasKC7DMlEsgjQ"></audio>
-<ul style="list-style:none;">
-
-<li><button id="boton">Play</button></li>
-
-<li><button onClick='volumeDown();'>Bajar volúmen</button></li>
-
-<li><button onClick='volumeUp();'>Subir volúmen</button></li>
-
-</ul>
+<button id="boton">Play</button>
 <br>
 <br>
 <hr>
 <br>
 
-<h2> Envíanos un whatsapp </h2>
-<br>
-<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
-Haciendo clic en el siguiente enlace nos envías un Whatsapp.
-</p>
-<a href="https://cutt.ly/rLtNG7J" title="Enviar mensaje" rel="nofollow"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-<br>
-<br>
 <h2> Secciones </h2>
 <nav>
 <ul>
 <li> <a href="index.html" accesskey="i"> Inicio </a> </li>
 <li> <a href="quienessomos.html" accesskey="q"> Quienes somos </a> </li>
 <li> <a href="programacion.html" accesskey="p"> Programación </a> </li>
-<li> <a href="https://evolutionradio.com.ar/htdocs/blog/" accesskey="n"> Noticias </a> </li>
 </ul>
 </nav>
 <br>
-<h2> Seguinos en las redes </h2>
+
+<h2> Programación </h2>
 <br>
-<ul>
-<li> <a href="mailto:info@evolutionradio.com.ar" title="contáctanos por correo" rel="nofollow"><i class="fas fa-envelope-square" aria-hidden="true"></i></a></li>
-<li><a href="https://www.facebook.com/Evolution-Radio-106575944443109/" title="facebook" target="_blank" rel="nofollow"> <i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-<li><a href="https://twitter.com/EvolutionRadio5?s=08" target="_blank" title="twitter" rel="nofollow"><i class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
-<li><a href="https://www.instagram.com/p/CSanf_XscjJ/?utm_medium=copy_link" target="_blank" title="instagram" rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-</ul>
+<table class="tabla">
+<caption>
+Aquí podrá encontrar toda la programación que ofrece nuestra emisora para vos.
+</caption>
+<tr>
+<th> Programa </th>
+<th> Horario </th>
+<th> Descripción </th>
+<th> Conducción </th>
+</tr>
+<tr>
+<td> La hora del juego </td>
+<td> Lunes a las 18 horas </td>
+<td> Un show deportivo en donde encontrarás toda la información del deporte nacional e internacional </td>
+<td> Federico Agüero </td>
+</tr>
+<tr>
+<td> Alo Brasil </td>
+<td> Viernes a las 19 horas </td>
+<td> La Magia de su música y el  encanto de sus lugares </td>
+<td> Angel Paladeo - Claudia Martin </td>
+</tr>
+<tr>
+<td> Delicatecen </td>
+<td> Sábados a las 18 horas </td>
+<td> El mundo gastronómico a tu alcance </td>
+<td> Damián Berg </td>
+</tr>
+<tr>
+<td> Amistades peligrosas </td>
+<td> Sábados  a las 22 horas </td>
+<td> Las noticias más sorprendentes e insólitas </td>
+<td> Gustavo Gallardo - Mirtha Hernandez </td>
+</tr>
+<tr>
+<td> La rocola </td>
+<td> Sábados a las 23 horas </td>
+<td> El programa de la movida tropical y bizarra </td>
+<td> Facundo Peña </td>
+</tr>
+<tr>
+<td> De la Colmena al gallinero </td>
+<td> Domingos a las 13 horas </td>
+<td> Noticias Agropecuarias, ganadería y mucho más </td>
+<td> Miguel </td>
+</tr>
+<tr>
+<td> Los cuatro gordos hablando de futbol </td>
+<td> Domingos a las 17 horas </td>
+<td> Toda la actualidad del futbol nacional e internacional </td>
+<td> Gustavo Gallardo - Damián Berg </td>
+</tr>
+<tr>
+<td> Radio Bac </td>
+<td> Domingos a las 19 horas </td>
+<td> El espacio radial de la Biblioteca Argentina para Ciegos </td>
+<td> Laura Lemura - Lucía Torres </td>
+</tr>
+<tr>
+<td> Psicocultura </td>
+<td> Domingos a las 20 horas </td>
+<td> Un programa de psicología y otras herramientas para el crecimiento personal </td>
+<td> Carolina Buceta </td>
+</tr>
+<tr>
+<td> Cerca del abismo </td>
+<td> Domingos 22 horas </td>
+<td> El programa del rock progresivo y sinfónico </td>
+<td> Lucas Kener - Alan Tejada </td>
+</tr>
+</table>
 <br>
-<footer>
-Sitio web creado por Facundo Peña. Copyright © 2021.
-</footer>
+<form>
+<input type="button" value="Ir a la  página principal" onClick="window.location.href='index.html'">
+</form>
 </body>
 <script>
 var audio_obj = document.querySelector("audio");
-
 var sound = document.getElementById("boton");
 
-var audio_volume = audio_obj.volume;
-
-
-
 sound.addEventListener("click", function() {
-
 	if (audio_obj.paused) {
-
 		audio_obj.play();
-
 		sound.innerHTML = "Pause";
-
 	} else {
-
 		audio_obj.pause();
-
 		sound.innerHTML = "Play";
-
 	}
-
 });
-
-
-
-function volumeUp() {
-
-	if (audio_volume < 1.0) {
-
-		audio_volume += 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
-function volumeDown() {
-
-	if (audio_volume > 0.2) {
-
-		audio_volume -= 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
 </script>
-
 </html>
