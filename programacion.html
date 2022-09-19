@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 <html lang="es">
 <head>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
 <meta charset="UTF-8">
 <meta name="description" content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
 <meta name="author" content="Facundo Peña">
@@ -24,9 +25,17 @@ border-collapse: collapse;
 {
 text-align: center;
 }
-ul
+
+.estiloul
 {
 text-align: center;
+list-style-type: none;
+}
+li {
+  background-color: black;
+  border: 2px solid green;
+  display: inline;
+  margin-right: 10px;
 }
 footer
 {
@@ -62,9 +71,17 @@ font-size: 28pt;
 }
 a
 {
+color: #F8C051;
 font-size: 28pt;
 text-align: center;
 font-family: cursive;
+padding: 0 4px;
+  text-decoration: none;
+}
+
+a:hover {
+background-color: darkgray;
+  color: black;
 }
 .mifecha
 {
@@ -105,18 +122,36 @@ document.write ('<div class="mifecha">' + "Hoy es " + day + " de " + months[mont
 <p> Para sintonizar nuestra radio presiona el siguiente botón. </p>
 <br>
 <audio src="http://node-15.zeno.fm/umt30332czzuv?rj-ttl=5&rj-tok=AAABfo4etlEAZasKC7DMlEsgjQ"></audio>
-<button id="boton">Play</button>
+<ul style="list-style:none;">
+
+<li><button id="boton">Play</button></li>
+
+<li><button onClick='volumeDown();'>Bajar volúmen</button></li>
+
+<li><button onClick='volumeUp();'>Subir volúmen</button></li>
+
+</ul>
+<br>
+<h2> Envíanos un whatsapp </h2>
+<br>
+<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
+Haciendo clic en el siguiente enlace nos envías un Whatsapp.
+</p>
+<a href="https://cutt.ly/rLtNG7J" title="Enviar mensaje" rel="nofollow"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
 <br>
 <br>
 <hr>
 <br>
 
-<h2> Secciones </h2>
 <nav>
-<ul>
+<h2> Menú principal </h2>
+<br>
+<ul class="estiloul">
 <li> <a href="index.html" accesskey="i"> Inicio </a> </li>
 <li> <a href="quienessomos.html" accesskey="q"> Quienes somos </a> </li>
 <li> <a href="programacion.html" accesskey="p"> Programación </a> </li>
+<li> <a href="https://evolutionradio.com.ar/htdocs/blog/" accesskey="n"> Noticias </a> </li>
+<li> <a href="https://zeno.fm/radio/EvolutionRadio/shows/" accesskey="e" target="_blank"> Episodios grabados </a> </li>
 </ul>
 </nav>
 <br>
@@ -201,16 +236,60 @@ Aquí podrá encontrar toda la programación que ofrece nuestra emisora para vos
 </body>
 <script>
 var audio_obj = document.querySelector("audio");
+
 var sound = document.getElementById("boton");
 
+var audio_volume = audio_obj.volume;
+
+
+
 sound.addEventListener("click", function() {
+
 	if (audio_obj.paused) {
+
 		audio_obj.play();
+
 		sound.innerHTML = "Pause";
+
 	} else {
+
 		audio_obj.pause();
+
 		sound.innerHTML = "Play";
+
 	}
+
 });
+
+
+
+function volumeUp() {
+
+	if (audio_volume < 1.0) {
+
+		audio_volume += 0.1;
+
+		audio_obj.volume = audio_volume;
+
+	}
+
+}
+
+
+
+function volumeDown() {
+
+	if (audio_volume > 0.2) {
+
+		audio_volume -= 0.1;
+
+		audio_obj.volume = audio_volume;
+
+	}
+
+}
+
+
+
 </script>
 </html>
