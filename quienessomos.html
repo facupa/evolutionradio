@@ -24,7 +24,7 @@ li {
   margin-right: 10px;
 }
 
-button {
+.botones {
 	color: #F8C051;
 	background-color: black;
 	border-radius: 10%;
@@ -114,11 +114,11 @@ document.write('<div class="mifecha">' + "Hoy es " + day + " de " + months[month
 <audio src="http://node-15.zeno.fm/umt30332czzuv?rj-ttl=5&rj-tok=AAABfo4etlEAZasKC7DMlEsgjQ"></audio>
 <ul style="list-style:none;">
 
-<li><button id="boton">Play</button></li>
+<li><button class="botones" id="boton">Play</button></li>
 
-<li><button onClick='volumeDown();'>Bajar volúmen</button></li>
+<li><button class="botones" onClick='volumeDown();'>Bajar volúmen</button></li>
 
-<li><button onClick='volumeUp();'>Subir volúmen</button></li>
+<li><button class="botones" onClick='volumeUp();'>Subir volúmen</button></li>
 
 </ul>
 <br>
@@ -157,7 +157,7 @@ Con el paso del tiempo, fuimos incorporando diversos programas que abordan disti
 Esperamos que la programación sea del agrado de todos,  y los esperamos a que se sumen a formar parte de esta gran familia. </p>
 <br>
 <form>
-<input type="button" value="Ir a la  página principal" onClick="window.location.href='index.html'">
+<input  class="botones" type="button" value="Ir a la  página principal" onClick="window.location.href='index.html'">
 </form>
 </body>
 <script>
