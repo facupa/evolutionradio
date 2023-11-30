@@ -81,11 +81,12 @@ Quienes somos
 </head>
 <body>
 <script type="text/javascript">
-//<![CDATA[
-function makeArray() {
-for (i = 0; i<makeArray.arguments.length; i++)
-this[i + 1] = makeArray.arguments[i];}
-var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+//Creamos el codigo para mostrar la fecha.
+//creamos la funcion para mostrar la fecha actual.
+function MostrarFecha() {
+for (i = 0; i<MostrarFecha.arguments.length; i++)
+this[i + 1] = MostrarFecha.arguments[i];}
+var months = new MostrarFecha('Enero','Febrero','Marzo','Abril','Mayo',
 'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
 var date = new Date();
 var day = date.getDate();
@@ -95,6 +96,36 @@ var year = (yy < 1000) ? yy + 1900 : yy;
 document.write('<div class="mifecha">' + "Hoy es " + day + " de " + months[month] + " del " + year);
 //]]>
 </script>    
+
+<p id = "reloj"> </p>
+<script>
+//Creo la funcion actualizar reloj.
+    function actualizarReloj() {
+      // Obtener la hora actual creando variables.
+//tanto como para la hora, minutos y segundos.
+//ademas uso la funcion new date para manipular la fecha y la hora guardandolo en una variable.
+      var fecha = new Date();
+      var horas = fecha.getHours();
+      var minutos = fecha.getMinutes();
+      var segundos = fecha.getSeconds();
+
+      // Asegurarse de que los valores de minutos y segundos tengan dos dígitos
+      minutos = minutos < 10 ? "0" + minutos : minutos;
+      segundos = segundos < 10 ? "0" + segundos : segundos;
+
+      // Construir la cadena de tiempo en formato HH:MM:SS
+      var tiempo = horas + ":" + minutos + ":" + segundos + "segundos";
+      // Mostrar el tiempo en el elemento con id "reloj"
+      document.getElementById("reloj").innerHTML = "Hora actual: " + tiempo;
+}
+
+    // Con la funcion set interval Actualizamos el reloj cada (1000 milisegundos)
+    setInterval(actualizarReloj, 1000);
+
+    // Inicializar el reloj al cargar la página
+//Llamo a la funcion actualizarreloj.
+    actualizarReloj();
+</script>
 <br>
 <br>
 <h1> Bienvenidos a Evolution Radio </h1>
