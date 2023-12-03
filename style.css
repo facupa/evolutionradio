@@ -1,0 +1,95 @@
+.imagen {
+    text-align: center;
+}
+
+.estiloul {
+	text-align: center;
+	list-style-type: none;
+}
+
+li {
+  background-color: black;
+  display: inline;
+  margin-right: 10px;
+}
+
+footer {
+    font-size: 28pt;
+    font-family: cursive;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: cursive;
+    font-size: 28pt;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 28pt;
+}
+
+a {
+    font-size: 28pt;
+    text-align: center;
+    font-family: cursive;
+}
+
+.mifecha {
+    text-align: center;
+    font-size: 26pt;
+    padding: 2px;
+    font-family: cursive;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+form div {
+margin-bottom: 10px;
+}
+
+form label {
+/*display: inline-block;*/
+width: 100px;
+}
+
+.container {
+    background-color: rgb(30, 31, 31);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#formulario{
+    height: 500px;
+    width: 600px;
+}
+
+.botones {
+	color: #F8C051;
+	background-color: black;
+	border-radius: 10%;
+	border: 2px solid #F8C051;
+	font-size: 28pt;
+	margin: 0.25em;
+}
