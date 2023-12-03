@@ -1,0 +1,79 @@
+.imagen {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+footer {
+    font-size: 28pt;
+    font-family: cursive;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: cursive;
+    font-size: 28pt;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 28pt;
+}
+
+a {
+    font-size: 28pt;
+    text-align: center;
+    font-family: cursive;
+}
+
+.mifecha {
+    text-align: center;
+    font-size: 26pt;
+    padding: 2px;
+    font-family: cursive;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+form div {
+margin-bottom: 10px;
+}
+
+form label {
+/*display: inline-block;*/
+width: 100px;
+}
+
+.container {
+    background-color: rgb(30, 31, 31);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#formulario{
+    height: 500px;
+    width: 600px;
+}

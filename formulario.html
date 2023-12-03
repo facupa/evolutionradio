@@ -1,200 +1,188 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
-<meta charset="UTF-8">
-<meta name="description" content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
-<meta name="author" content="Facundo Peña">
-<style>
-.imagen
-{
-text-align: center;
-}
-ul
-{
-text-align: center;
-}
-footer
-{
-font-size: 28pt;
-font-family: cursive;
-text-align: center;
-}
-body
-{
-background-color: black;
-color: white;
-}
-p
-{
-font-family: cursive;
-font-size: 28pt;
-text-align: center;
-color: white;
-}
-h1
-{
-font-family: cursive;
-text-align: center;
-color: white;
-font-size: 30pt;
-}
-h2
-{
-font-family: cursive;
-text-align: center;
-color: white;
-font-size: 28pt;
-}
-a
-{
-font-size: 28pt;
-text-align: center;
-font-family: cursive;
-}
-.mifecha
-{
-text-align: center;
-font-size: 26pt;
-padding: 2px;
-font-family: cursive;
-}
-</style>
-<title>
-Evolution radio
-</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
+	<meta name="author" content="Facundo Peña">
+	<link rel="stylesheet" href="style.css">
+
+	<title>
+		Evolution radio
+	</title>
 </head>
+
 <body>
-<script type="text/javascript">
-//<![CDATA[
-function makeArray() {
-for (i = 0; i<makeArray.arguments.length; i++)
-this[i + 1] = makeArray.arguments[i];}
-var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
-'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
-var date = new Date();
-var day = date.getDate();
-var month = date.getMonth() + 1;
-var yy = date.getYear();
-var year = (yy < 1000) ? yy + 1900 : yy;
-document.write ('<div class="mifecha">' + "Hoy es " + day + " de " + months[month] + " del " + year);
-//]]>
-</script>    
-<br>
-<br>
-<h1> Bienvenidos a Evolution Radio </h1>
-<img src="logoevolution2.jpg" alt="Logo de Evolution Radio" width="300" height="250" class="imagen">
-<br>
-<p> Somos la evolución </p>
-<p> Escucha música las 24 horas los 7 días de la semana. </p>
-<p> Además te ofrecemos una variedad de programación que te encantará </p>
-<p> Para sintonizar nuestra radio presiona el siguiente botón. </p>
-<br>
-<audio src="http://node-15.zeno.fm/umt30332czzuv?rj-ttl=5&rj-tok=AAABfo4etlEAZasKC7DMlEsgjQ"></audio>
-<ul style="list-style:none;">
+	<script type="text/javascript">
+		//<![CDATA[
+		function makeArray() {
+			for (i = 0; i < makeArray.arguments.length; i++)
+				this[i + 1] = makeArray.arguments[i];
+		}
+		var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+			'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+		var date = new Date();
+		var day = date.getDate();
+		var month = date.getMonth() + 1;
+		var yy = date.getYear();
+		var year = (yy < 1000) ? yy + 1900 : yy;
+		document.write('<div class="mifecha">' + "Hoy es " + day + " de " + months[month] + " del " + year);
+		//]]>
+	</script>
+	<br>
+	<br>
+	<h1> Bienvenidos a Evolution Radio </h1>
+	<img src="logoevolution2.jpg" alt="Logo de Evolution Radio" width="300" height="250" class="imagen">
+	<br>
+	<p> Somos la evolución </p>
+	<p> Escucha música las 24 horas los 7 días de la semana. </p>
+	<p> Además te ofrecemos una variedad de programación que te encantará </p>
+	<p> Para sintonizar nuestra radio presiona el siguiente botón. </p>
+	<br>
+	<audio src="http://node-15.zeno.fm/umt30332czzuv?rj-ttl=5&rj-tok=AAABfo4etlEAZasKC7DMlEsgjQ"></audio>
+	<ul style="list-style:none;">
 
-<li><button id="boton">Play</button></li>
+		<li><button id="boton">Play</button></li>
 
-<li><button onClick='volumeDown();'>Bajar volúmen</button></li>
+		<li><button onClick='volumeDown();'>Bajar volúmen</button></li>
 
-<li><button onClick='volumeUp();'>Subir volúmen</button></li>
+		<li><button onClick='volumeUp();'>Subir volúmen</button></li>
 
-</ul>
-<br>
-<br>
-<hr>
-<br>
+	</ul>
+	<br>
+	<br>
+	<hr>
+	<br>
 
-<h2> Envíanos un whatsapp </h2>
-<br>
-<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
-Haciendo clic en el siguiente enlace nos envías un Whatsapp.
-</p>
-<a href="https://cutt.ly/rLtNG7J" title="Enviar mensaje" rel="nofollow"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-<br>
-<br>
-<h2> Secciones </h2>
-<nav>
-<ul>
-<li> <a href="index.html" accesskey="i"> Inicio </a> </li>
-<li> <a href="quienessomos.html" accesskey="q"> Quienes somos </a> </li>
-<li> <a href="programacion.html" accesskey="p"> Programación </a> </li>
-<li> <a href="https://evolutionradio.com.ar/htdocs/blog/" accesskey="n"> Noticias </a> </li>
-</ul>
-</nav>
-<br>
-<h2> Contáctese </h2>
-<p> Si querés contactarte con nosotros para sugerir ideas o realizar un programa radial. </p>
-<p> Reyena el siguiente formulario y a la brevedad nos estaremos contactando. </p>
-<br>
-<form action="formulario.php" method="post">
-<label for="nombre"> Nombre </label>
-<input type="text" name="nombre" id="nombre" required>
-<label for="correo"> Correo electrónico </label>
-<input type="email" id="correo" name="correo">
-<label for="mensaje"> mensaje </label>
-<textarea name="mensaje" id="mensaje">
-</textarea>
-<input type="submit" value="enviar">
+	<h2> Envíanos un whatsapp </h2>
+	<br>
+	<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
+		Haciendo clic en el siguiente enlace nos envías un Whatsapp.
+	</p>
+	<a href="https://cutt.ly/rLtNG7J" title="Enviar mensaje" rel="nofollow"><i class="fab fa-whatsapp"
+			aria-hidden="true"></i></a>
+	<br>
+	<br>
+	<h2> Secciones </h2>
+	<nav>
+		<ul>
+			<li> <a href="index.html" accesskey="i"> Inicio </a> </li>
+			<li> <a href="quienessomos.html" accesskey="q"> Quienes somos </a> </li>
+			<li> <a href="programacion.html" accesskey="p"> Programación </a> </li>
+			<li> <a href="https://evolutionradio.com.ar/htdocs/blog/" accesskey="n"> Noticias </a> </li>
+		</ul>
+	</nav>
+	<br>
+	<h2> Seguinos en las redes </h2>
+	<br>
+	<ul>
+		<li> <a href="mailto:info@evolutionradio.com.ar" title="contáctanos por correo" rel="nofollow"><i
+					class="fas fa-envelope-square" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.facebook.com/Evolution-Radio-106575944443109/" title="facebook" target="_blank"
+				rel="nofollow"> <i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+		<li><a href="https://twitter.com/EvolutionRadio5?s=08" target="_blank" title="twitter" rel="nofollow"><i
+					class="fab fa-twitter-square" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com/p/CSanf_XscjJ/?utm_medium=copy_link" target="_blank" title="instagram"
+				rel="nofollow"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+	</ul>
+	<br>
 
-</form></body>
+	<div class="container">
+		<h2> Contáctese </h2>
+		<p> Si querés contactarte con nosotros para sugerir ideas o realizar un programa radial. </p>
+		<p> Rellena el siguiente formulario y a la brevedad nos estaremos contactando. </p>
+		<br>
+		<form action="" method="post" id="formulario" name="" onsubmit="return validacion()">
+			<div class="campo">
+				<label for="nombre"> Nombre </label>
+				<input type="text" name="nombre" id="nombre" required>
+			</div>
+			<br>
+			<div>
+				<label for="correo"> e-mail </label>
+				<input type="email" id="correo" name="correo">
+			</div>
+			<br>
+			<div>
+				<label for="asunto"> asunto </label>
+				<input type="text" name="asunto" id="asunto" required>
+			</div>
+			<br>
+
+			<div>
+				<label for="mensaje"> mensaje </label>
+				<textarea name="mensaje" id="mensaje"></textarea>
+
+			</div>
+
+			<br>
+			<div>
+
+				<input type="submit" value="enviar">
+			</div>
+
+
+		</form>
+	</div>
+
+	<div class="mensaje"></div>
+	<script src="script.js"></script>
+</body>
 <script>
-var audio_obj = document.querySelector("audio");
+	var audio_obj = document.querySelector("audio");
 
-var sound = document.getElementById("boton");
+	var sound = document.getElementById("boton");
 
-var audio_volume = audio_obj.volume;
-
-
-
-sound.addEventListener("click", function() {
-
-	if (audio_obj.paused) {
-
-		audio_obj.play();
-
-		sound.innerHTML = "Pause";
-
-	} else {
-
-		audio_obj.pause();
-
-		sound.innerHTML = "Play";
-
-	}
-
-});
+	var audio_volume = audio_obj.volume;
 
 
 
-function volumeUp() {
+	sound.addEventListener("click", function () {
 
-	if (audio_volume < 1.0) {
+		if (audio_obj.paused) {
 
-		audio_volume += 0.1;
+			audio_obj.play();
 
-		audio_obj.volume = audio_volume;
+			sound.innerHTML = "Pause";
 
-	}
+		} else {
 
-}
+			audio_obj.pause();
+
+			sound.innerHTML = "Play";
+
+		}
+
+	});
 
 
 
-function volumeDown() {
+	function volumeUp() {
 
-	if (audio_volume > 0.2) {
+		if (audio_volume < 1.0) {
 
-		audio_volume -= 0.1;
+			audio_volume += 0.1;
 
-		audio_obj.volume = audio_volume;
+			audio_obj.volume = audio_volume;
+
+		}
 
 	}
 
-}
 
 
+	function volumeDown() {
 
+		if (audio_volume > 0.2) {
+
+			audio_volume -= 0.1;
+
+			audio_obj.volume = audio_volume;
+
+		}
+
+	}
 </script>
-
 </html>
