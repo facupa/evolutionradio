@@ -51,6 +51,34 @@ a {
     font-family: cursive;
 }
 
+a:hover{
+	background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+
+}
+
+li button:hover {
+	background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+li a:hover{
+	background-color: #F8C051;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+summary:hover{
+	background-color: #F8C051;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
 .mifecha {
     text-align: center;
     font-size: 26pt;
@@ -59,8 +87,8 @@ a {
 }
 
 input[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
+	background-color: #F8C051;
+	color: black;
     cursor: pointer;
 }
 
@@ -92,4 +120,21 @@ width: 100px;
 	border: 2px solid #F8C051;
 	font-size: 28pt;
 	margin: 0.25em;
+}
+#enviar{
+    font-size: 28pt;
+    text-align: center;
+    font-family: cursive;
+}
+#enviar:hover{
+    background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+#reloj {
+	font-family: 'Hedvig Letters Serif', serif;
+	font-size: 40pt;
+	background-color: #F8C051;
+
 }

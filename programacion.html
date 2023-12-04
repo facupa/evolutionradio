@@ -5,6 +5,10 @@
 <meta charset="UTF-8">
 <meta name="description" content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
 <meta name="author" content="Facundo Peña">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+
 <style>
 caption {
 	padding: 10px;
@@ -47,6 +51,34 @@ a:hover {
 	border: 2px solid white;
 }
 
+li button:hover {
+	background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+li a:hover{
+	background-color: #F8C051;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+
+}
+
+input.botones:hover{
+	background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+summary:hover{
+	background-color: #F8C051;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
 .botones {
 	color: #F8C051;
 	background-color: black;
@@ -85,7 +117,15 @@ h2 {
 	text-align: center;
 	font-size: 26pt;
 	padding: 2px;
-}</style>
+}
+
+#reloj {
+	font-family: 'Hedvig Letters Serif', serif;
+	font-size: 40pt;
+	background-color: #F8C051;
+
+}
+</style>
 <title>
 Programación
 </title>
@@ -125,7 +165,7 @@ document.write ('<div class="mifecha">' + "Hoy es " + day + " de " + months[mont
       segundos = segundos < 10 ? "0" + segundos : segundos;
 
       // Construir la cadena de tiempo en formato HH:MM:SS
-      var tiempo = horas + ":" + minutos + ":" + segundos + "segundos";
+      var tiempo = horas + ":" + minutos + ":" + segundos + " segundos";
       // Mostrar el tiempo en el elemento con id "reloj"
       document.getElementById("reloj").innerHTML = "Hora actual: " + tiempo;
 }
