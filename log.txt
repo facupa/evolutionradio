@@ -1,0 +1,204 @@
+commit 1adbab5fbb8566683aedcdb1d7019c95d7f2db8e
+Author: fpena <facundopenia@gmail.com>
+Date:   Tue Dec 5 19:15:06 2023 -0300
+
+    cambiamos el estilo del reloj en el archivo especifico del formato
+
+commit 8d86296de389f4ea9c9b27ff8d7602fab2481b44
+Author: fpena <facundopenia@gmail.com>
+Date:   Tue Dec 5 19:10:34 2023 -0300
+
+    cambiamos el color del reloj
+
+commit ac60c07434897cf34d5e88922edcde9d1f951b74
+Author: fpena <facundopenia@gmail.com>
+Date:   Mon Dec 4 18:42:31 2023 -0300
+
+    realizamos cambios en el estilo del boton y del formulario
+
+commit 324225dd921a25c95d92c4501c286cff6d7ee562
+Author: fpena <facundopenia@gmail.com>
+Date:   Fri Dec 1 08:45:21 2023 -0300
+
+    seguimos realizando mejoras
+
+commit 9d2046c406039d2f1592cd281eeda72f4864e7f7
+Author: fpena <facundopenia@gmail.com>
+Date:   Sun Dec 3 14:02:02 2023 -0300
+
+    agregamos el enlace contacto a toda la pagina
+
+commit fd8119b4edc1cd05fd4b49067bad8820fc8bc586
+Merge: 81fa892 c2543fa
+Author: fpena <facundopenia@gmail.com>
+Date:   Sun Dec 3 13:53:16 2023 -0300
+
+    Realizamos mejoras en el sitio
+
+commit c2543faf51753368a9da6e54ef2bf90e0fa98d18
+Author: fpena <facundopenia@gmail.com>
+Date:   Sun Dec 3 12:46:40 2023 -0300
+
+    agregamos estilo al formulario y validacion mediante java script
+
+commit 81fa89251a162308b674fa8ca17c91f890fa2452
+Author: fpena <facundopenia@gmail.com>
+Date:   Thu Nov 30 15:33:53 2023 -0300
+
+    mejoramos el reloj
+
+commit 81ebc387d60a39efa97ca496af4202f552f68380
+Author: fpena <facundopenia@gmail.com>
+Date:   Mon Jul 31 08:21:09 2023 -0300
+
+    agregamos un menu desplegable
+
+commit 0186546acb36dda13ab6db91c9f2e66cfd050d14
+Author: fpena <facundopenia@gmail.com>
+Date:   Wed Jul 26 23:00:47 2023 -0300
+
+    agregamos un menu
+
+commit f71b3f08ed6127409b27fcd671fb0df38261d87d
+Author: fpena <facundopenia@gmail.com>
+Date:   Wed Sep 28 09:58:29 2022 -0300
+
+    corregimos el archivo formulario
+
+commit eb10f2aff4e82cf0012c6da04a3959f922aa7cc4
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Wed Sep 21 19:42:53 2022 -0300
+
+    prueba fuentes 5
+
+commit f028885d6fa9f4cfea50e7ab666d53eb5fa439d9
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Wed Sep 21 19:32:17 2022 -0300
+
+    prueba fuentes 4
+
+commit 6b46d922d54a8b0af25fba1a4764d258e258f669
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Wed Sep 21 19:22:08 2022 -0300
+
+    prueba fuentes 3
+
+commit 112c940ff6eac3843c7c3eb1fa9563666c3271ad
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Wed Sep 21 19:16:59 2022 -0300
+
+    prueba fuentes 2
+
+commit e0c17185b83ad88db4e1b5c2c271b7b0155c148f
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Wed Sep 21 19:09:07 2022 -0300
+
+    prueba fuente
+
+commit 92fadd59b5feb6b5ae882cb0ccb0df8ed4b49047
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Mon Sep 19 21:16:45 2022 -0300
+
+    clase botones
+
+commit 98a0e1eff5891eef27db640f159ba500c85ad25e
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Mon Sep 19 21:06:33 2022 -0300
+
+    agrego estilos
+
+commit ba0cbc628bcee951301430aeb1a7a37f89db0df2
+Author: Patricia <patriciamamani73@gmail.com>
+Date:   Mon Sep 19 20:58:42 2022 -0300
+
+    estilo para button
+
+commit f3e8e6351507ba4b6b4a0edffcf3cce283e3e424
+Author: fpena <facundopenia@gmail.com>
+Date:   Mon Sep 19 20:48:34 2022 -0300
+
+    seguimos con los cambios visuales en toda la pagina sacamos los bordes
+
+commit 2662f897fa52bb471f2ac55e24131216038cc970
+Author: fpena <facundopenia@gmail.com>
+Date:   Mon Sep 19 20:26:07 2022 -0300
+
+    probando cambios en de bordes en el index
+
+commit d66c930a5e1a9237b0c49e9f3fc4b75e9658dd6d
+Author: fpena <facundopenia@gmail.com>
+Date:   Mon Sep 19 19:19:44 2022 -0300
+
+    modificamos la pagina programacion
+
+commit 51002436e6b265249eff1d0d49e9850cb80e28ef
+Author: fpena <facundopenia@gmail.com>
+Date:   Sun Sep 18 14:06:49 2022 -0300
+
+    segundo cambio en la pagina quienes somos
+
+commit 90462ea27089bb037268b67a948fa7562d1f4a6d
+Author: fpena <facundopenia@gmail.com>
+Date:   Sun Sep 18 13:59:12 2022 -0300
+
+    realizamos cambios en el apartado quienes somos
+
+commit da7857e185a18db286b423e212aa9729e42d4502
+Author: fpena <facundopenia@gmail.com>
+Date:   Fri Sep 16 13:07:01 2022 -0300
+
+    agregamos mejoras visuales y mejor accesibilidad en el sitio
+
+commit e9fc638f3593ca66024c8f47d7a7ff8c58f938c9
+Author: fpena <facundopenia@gmail.com>
+Date:   Thu Sep 15 14:39:34 2022 -0300
+
+    eliminamos dos archivos inecesarios
+
+commit caca614fb5da3f2687205d481c9b34e657da1646
+Author: fpena <facundopenia@gmail.com>
+Date:   Thu Sep 15 14:34:37 2022 -0300
+
+    realizamos algunos cambios de mejoras visuales en el index
+
+commit 217034f8f4b9030f70776b7058cb2ed6f0d4bb35
+Author: fpena <facundopenia@gmail.com>
+Date:   Thu Sep 15 11:34:03 2022 -0300
+
+    primera modificacion en el apartado de redes sociales
+
+commit 3f6cc69028519cecb208cb1103cead003822b00c
+Author: fpena <facundopenia@gmail.com>
+Date:   Wed Aug 17 23:15:29 2022 -0300
+
+    creamos el archivo formulario para la seccion contacto
+
+commit 3cb46c1f8ee1d4182cba9643bf73701df7214b67
+Author: fpena <facundopenia@gmail.com>
+Date:   Fri Aug 5 14:51:55 2022 -0300
+
+    agregamos el archivo contacto para trabajar con el formulario de contacto
+
+commit 27921207bf3bbd234f167e832bcab530cab5574c
+Author: fpena <facundopenia@gmail.com>
+Date:   Fri Aug 5 14:40:56 2022 -0300
+
+    agregamos los archivos que compone el sitio de evolution radio
+
+commit 465ba816682e2b67df59e67a23a01f26087d4304
+Author: fpena <facundopenia@gmail.com>
+Date:   Fri Jul 29 12:22:40 2022 -0300
+
+    eliminamos un signo que estaba mal y molestaba al sitio
+
+commit 5bb037d22f355d73326cc250f3d51f8e4c5c6f8d
+Author: fpena <facundopenia@gmail.com>
+Date:   Thu Jul 28 13:16:41 2022 -0300
+
+    agregamos enlaces de refencia a sitios de interes
+
+commit 58446b451a7cff017f28f2db467edc625ada5be3
+Author: Facundo Peña <facudesc_carp@hotmail.com>
+Date:   Wed Jul 27 16:35:16 2022 -0300
+
+    Initial commit

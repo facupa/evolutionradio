@@ -124,7 +124,7 @@
 		<p> Si querés contactarte con nosotros para sugerir ideas o realizar un programa radial. </p>
 		<p> Rellena el siguiente formulario y a la brevedad nos estaremos contactando. </p>
 		<br>
-		<form action="" method="post" id="formulario" name="" onsubmit="return validacion()">
+		<form action="mail.php" method="post" id="formulario" name="" onsubmit="return validacion()">
 			<div class="campo">
 				<label for="nombre"> Nombre </label>
 				<input type="text" name="nombre" id="nombre" required>
@@ -135,13 +135,7 @@
 				<input type="email" id="correo" name="correo">
 			</div>
 			<br>
-			<div>
-				<label for="asunto"> asunto </label>
-				<input type="text" name="asunto" id="asunto" required>
-			</div>
-			<br>
-
-			<div>
+						<div>
 				<label for="mensaje"> mensaje </label>
 				<textarea name="mensaje" id="mensaje"></textarea>
 
