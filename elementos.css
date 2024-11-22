@@ -1,0 +1,132 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+background-color: #f4f4f4;
+    }
+header {
+background-color: #005f73;  /* Contraste alto con texto blanco */
+color: #ffffff;
+      padding: 20px;
+border-bottom: 3px solid #94d2bd;  /* Contraste con el fondo */
+}
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+nav {
+background-color: #94d2bd;
+padding: 15px;
+margin-top: 20px;
+border-top: 3px solid #005f73;
+}
+nav a:focus {
+outline: 3px solid #ffdf00;  /* Indicador visual claro */
+background-color: #003d44;   /* Fondo al estar enfocado */
+color: #ffffff;              /* Color de texto cuando está enfocado */
+}
+main {
+background-color: #ffffff;  /* Fondo claro y neutral */
+color: #333333;  /* Texto con alto contraste */
+padding: 20px;
+margin-top: 20px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+
+main p {
+      font-size: 1.1rem;
+      line-height: 1.6;  /* Mejor legibilidad */
+    }
+
+.imagen {
+	text-align: center;
+}
+.estiloul {
+	text-align: center;
+	list-style-type: none;
+}
+li {
+  background-color: black;
+  display: inline;
+  margin-right: 10px;
+}
+a {
+	color: #F8C051;
+	font-size: 28pt;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	padding: 0 4px;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+
+}
+
+li button:hover {
+	background-color: darkgray;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+li a:hover{
+	background-color: #F8C051;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+
+}
+summary:hover{
+	background-color: #F8C051;
+	color: black;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+.botones {
+	color: #F8C051;
+	background-color: black;
+	border-radius: 10%;
+	border: 2px solid #F8C051;
+	font-size: 28pt;
+	margin: 0.25em;
+}
+
+footer {
+	font-size: 28pt;
+	text-align: center;
+}
+
+.mifecha {
+	text-align: center;
+	font-size: 26pt;
+	padding: 2px;
+}
+#reloj {
+	font-family: 'Hedvig Letters Serif', serif;
+	font-size: 40pt;
+	background-color: #F8C051;
+color: black;
+}
+aside {
+    background-color: #e0f7fa;  /* Fondo claro para el aside */
+    color: #003d44;  /* Texto con buen contraste */
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 3px solid #005f73;  /* Borde para separar el aside */
+    width: 300px;  /* Ancho fijo para el aside */
+}

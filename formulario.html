@@ -7,71 +7,36 @@
 	<meta name="description"
 		content="Evolution Radio. Un pequeño espacio en la red en donde  encontrarán una emisora de radio con buena música a toda hora y programación variada">
 	<meta name="author" content="Facundo Peña">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
-	
-	
-	<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="elementos.css">
 	<title>
 		Contáctese con nosotros
 	</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-	<script type="text/javascript">
-		//<![CDATA[
-		function fecha() {
-			for (i = 0; i < fecha.arguments.length; i++)
-				this[i + 1] = fecha.arguments[i];
-		}
-		var months = new fecha('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
-			'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
-		var date = new Date();
-		var day = date.getDate();
-		var month = date.getMonth() + 1;
-		var yy = date.getYear();
-		var year = (yy < 1000) ? yy + 1900 : yy;
-		document.write('<div class="mifecha">' + "Hoy es " + day + " de " + months[month] + " del " + year);
-		//]]>
-	</script>
-	<br>
-<p id ="reloj"> </p>
-<script>
-//Creo la funcion actualizar reloj.
-    function actualizarReloj() {
-      // Obtener la hora actual creando variables.
-//tanto como para la hora, minutos y segundos.
-//ademas uso la funcion new date para manipular la fecha y la hora guardandolo en una variable.
-      var fecha = new Date();
-      var horas = fecha.getHours();
-      var minutos = fecha.getMinutes();
-      var segundos = fecha.getSeconds();
-
-      // Asegurarse de que los valores de minutos y segundos tengan dos dígitos
-      minutos = minutos < 10 ? "0" + minutos : minutos;
-      segundos = segundos < 10 ? "0" + segundos : segundos;
-
-      // Construir la cadena de tiempo en formato HH:MM:SS
-      var tiempo = horas + ":" + minutos + ":" + segundos + " segundos";
-      // Mostrar el tiempo en el elemento con id "reloj"
-//Dicho id lo saco del parrafo para luego mostrarlo.
-      document.getElementById("reloj").innerHTML = "Hora actual: " + tiempo;
-}
-
-    // Con la funcion set interval Actualizamos el reloj cada (1000 milisegundos)
-    setInterval(actualizarReloj, 1000);
-
-    // Inicializar el reloj al cargar la página
-//Llamo a la funcion actualizarreloj.
-    actualizarReloj();
-
-</script>    
-	<br>
+<header>
+<ul style="list-style:none;">
+<li> <p id="mifecha"></p> </li>
+<li> <p id ="reloj"> </p> </li>
+<li> <li> <p>Clima en <span id="ciudad">Buenos Aires</span></p> </li>
+<li> <p>Temperatura: <span id="temperatura"></span>°C</p> </li>
+<li> <p>Condición: <span id="condicion"></span></p> </li>
+</ul>
+<script src="fecha.js" type="text/javascript"></script>
+<script src="reloj.js"></script>    
+    <script src="clima.js"></script>
+<img src="logoevolution2.jpg" alt="" width="300" height="250" class="imagen">
+<a href="#principal" accesskey="s"> Saltar al área de navegación </a>
+</header>
+<main>
 	<h1> Bienvenidos a Evolution Radio </h1>
-	<img src="logoevolution2.jpg" alt="Logo de Evolution Radio" width="300" height="250" class="imagen">
+
 	<br>
 	<p> Somos la evolución </p>
 	<p> Escucha música las 24 horas los 7 días de la semana. </p>
@@ -95,25 +60,27 @@
 
 	<h2> Envíanos un whatsapp </h2>
 	<br>
-	<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
-		Haciendo clic en el siguiente enlace nos envías un Whatsapp.
-	</p>
-	<a href="https://cutt.ly/rLtNG7J" title="Enviar mensaje" rel="nofollow"><i class="fab fa-whatsapp"
-			aria-hidden="true"></i></a>
+<p> Querés comunicarte con nosotros, pedirnos una canción o simplemente hacernos una sugerencia.
+Escribiendo en el siguiente formulario nos envías un Whatsapp.
+</p>
+<form onsubmit="event.preventDefault(); sendMessage();">
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" required></textarea><br><br>
+        <button type="submit">Enviar a WhatsApp</button>
+    </form>
 	<br>
 	<br>
-
+</main>
+	<nav id="principal">
 <h2> Navega por el sitio </h2>
-<br>
 <p aria-hidden="true">¡Atención!<br>Este contenido fué creado inicialmente para usuarios de lectores de pantalla.</p>
-	<nav>
 <details>
 <summary>Menú principal</summary>
 		<ul class="estiloul">
 			<li> <a href="index.html" accesskey="i"> Inicio </a> </li>
 			<li> <a href="quienessomos.html" accesskey="q"> Quienes somos </a> </li>
 			<li> <a href="programacion.html" accesskey="p"> Programación </a> </li>
-			<li> <a href="formulario.html" accesskey="c"> contáctese con nosotros </a> </li>
+			<li> <a href="formulario.html" accesskey="c" aria-current="page"> contáctese con nosotros </a> </li>
 			<li> <a href="https://evolutionradio.com.ar/htdocs/blog/" accesskey="n"> Noticias </a> </li>
 		</ul>
 </details>
@@ -124,35 +91,30 @@
 		<p> Si querés contactarte con nosotros para sugerir ideas o realizar un programa radial. </p>
 		<p> Rellena el siguiente formulario y a la brevedad nos estaremos contactando. </p>
 		<br>
-		<form action="mail.php" method="post" id="formulario" name="" onsubmit="return validacion()">
-			<div class="campo">
+<form action="script.php" method="get" id="formulario" name="" onsubmit="return validacion()">
+<fieldset>
+<legend> Ingrese la información </legend>
+
+	<div>
 				<label for="nombre"> Nombre </label>
 				<input type="text" name="nombre" id="nombre" required>
-			</div>
+</div>
 			<br>
-			<div>
+<div>
 				<label for="correo"> e-mail </label>
 				<input type="email" id="correo" name="correo">
 			</div>
 			<br>
-						<div>
-				<label for="mensaje"> mensaje </label>
-				<textarea name="mensaje" id="mensaje"></textarea>
+<div>
+<label for="mensaje"> mensaje </label>
+<textarea name="message" id="mensaje"></textarea>
+</div>
+</fieldset>
+<input type="submit">
+<input  class="botones" type="button" value="Ir a la  página principal" onClick="window.location.href='index.html'">
+</form>
+<script src="script.js"></script>
 
-			</div>
-
-			<br>
-			<div>
-
-				<input type="submit" value="Enviar" id="enviar">
-			</div>
-
-
-		</form>
-	</div>
-
-	<div class="mensaje"></div>
-	<script src="script.js"></script>
 </body>
 <script>
 	var audio_obj = document.querySelector("audio");
@@ -209,4 +171,6 @@
 
 	}
 </script>
+<script src="whatsapp.js"></script>
+
 </html>
