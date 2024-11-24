@@ -10,6 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="elementos.css">
+
+<script src="whatsapp.js"></script>
+<script src="reloj.js"></script>    
+    <script src="clima.js"></script>
 <title>
 Evolution radio
 </title>
@@ -25,13 +29,9 @@ Evolution radio
 <li> <p>Condición: <span id="condicion"></span></p> </li>
 </ul>
 <script src="fecha.js" type="text/javascript"></script>
-<script src="reloj.js"></script>    
-    <script src="clima.js"></script>
 <img src="logoevolution2.jpg" alt="" width="300" height="250" class="imagen">
 <a href="#principal" accesskey="s"> Saltar al área de navegación </a>
 </header>
-<br>
-<br>
 <main>
 <h1> Bienvenidos a Evolution Radio </h1>
 <br>
@@ -62,15 +62,11 @@ Escribiendo en el siguiente formulario nos envías un Whatsapp.
         <button type="submit">Enviar a WhatsApp</button>
     </form>
 </main>
-<br>
-<br>
 <hr>
-<br>
-
+<nav id="principal">
 <h2> Navega por el sitio </h2>
 <br>
 <p aria-hidden="true">¡Atención!<br>Este contenido fué creado inicialmente para usuarios de lectores de pantalla.</p>
-<nav id="principal">
 <details>
 <summary>Menú principal</summary>
 <ul class="estiloul">
@@ -83,7 +79,6 @@ Escribiendo en el siguiente formulario nos envías un Whatsapp.
 </ul>
 </details>
 </nav>
-<br>
 <aside>
 <h2> Seguinos en las redes </h2>
 <br>
@@ -99,70 +94,5 @@ Escribiendo en el siguiente formulario nos envías un Whatsapp.
 Sitio web creado por Facundo Peña. Copyright © 2021.
 </footer>
 </body>
-<script>
-var audio_obj = document.querySelector("audio");
-
-var sound = document.getElementById("boton");
-
-var audio_volume = audio_obj.volume;
-
-
-
-sound.addEventListener("click", function() {
-
-	if (audio_obj.paused) {
-
-		audio_obj.play();
-
-		sound.innerHTML = "Pause";
-
-	} else {
-
-		audio_obj.pause();
-
-		sound.innerHTML = "Play";
-
-	}
-
-});
-
-
-
-function volumeUp() {
-
-	if (audio_volume < 1.0) {
-
-		audio_volume += 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
-function volumeDown() {
-
-	if (audio_volume > 0.2) {
-
-		audio_volume -= 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
-</script>
-<script>
-        function sendMessage() {
-            const message = document.getElementById('message').value;
-            const phoneNumber = '5491137973150'; // Cambia esto por el número predefinido en formato internacional
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-        }
-    </script>
+<script src="reproductor.js"></script>
 </html>
