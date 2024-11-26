@@ -91,7 +91,7 @@ Escribiendo en el siguiente formulario nos envías un Whatsapp.
 </details>
 </nav>
 <br>
-
+<main>
 <h2> Programación </h2>
 <br>
 <table class="tabla">
@@ -174,68 +174,12 @@ Aquí podrá encontrar toda la programación que ofrece nuestra emisora para vos
 </tr>
 </tfoot>
 </table>
+</main>
 <br>
 <form>
 <input class="botones" type="button" value="Ir a la  página principal" onClick="window.location.href='index.html'">
 </form>
 </body>
-<script>
-var audio_obj = document.querySelector("audio");
-
-var sound = document.getElementById("boton");
-
-var audio_volume = audio_obj.volume;
-
-
-
-sound.addEventListener("click", function() {
-
-	if (audio_obj.paused) {
-
-		audio_obj.play();
-
-		sound.innerHTML = "Pause";
-
-	} else {
-
-		audio_obj.pause();
-
-		sound.innerHTML = "Play";
-
-	}
-
-});
-
-
-
-function volumeUp() {
-
-	if (audio_volume < 1.0) {
-
-		audio_volume += 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
-function volumeDown() {
-
-	if (audio_volume > 0.2) {
-
-		audio_volume -= 0.1;
-
-		audio_obj.volume = audio_volume;
-
-	}
-
-}
-
-
-
-</script>
+<script src="reproductor.js"></script>
 <script src="whatsapp.js"></script>
 </html>

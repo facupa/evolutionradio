@@ -1,0 +1,6 @@
+.social-icon {
+            color: black; /* Estilo inicial del icono en negro */
+            font-size: 24px; /* Tamaño del icono */
+            margin: 10px;
+            transition: all 0.3s ease; /* Animación para hover */
+        }
