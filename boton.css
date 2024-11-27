@@ -1,0 +1,17 @@
+        .boton-enlace {
+            display: inline-block; /* Para comportarse como un botón */
+            background-color: #4CAF50; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado interno */
+            text-align: center; /* Centrar el texto */
+            text-decoration: none; /* Eliminar subrayado */
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 16px; /* Tamaño del texto */
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        
+        .boton-enlace:hover {
+            background-color: #45a049; /* Cambiar color de fondo */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
